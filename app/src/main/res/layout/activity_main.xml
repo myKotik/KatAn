@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/dgreen">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="230dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseCompoundDrawables">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/sjis_sp_setofont"
+            android:gravity="center"
+            android:letterSpacing="0.4"
+            android:text="@string/name"
+            android:textColor="@color/lorange"
+            android:textSize="70sp" />
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_gravity="center"
+            android:layout_width="270dp"
+            android:layout_height="270dp"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/name"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="WebViewLayout">
+
+        <ImageView
+            android:id="@+id/btn"
+            android:layout_width="230dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:src="@drawable/one"
+            android:contentDescription="@string/start"/>
+
+        <Button
+            android:id="@+id/start"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:text="@string/start"
+            android:textSize="22sp"
+            android:fontFamily="@font/sjis_sp_setofont"
+            android:textColor="@color/lorange"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

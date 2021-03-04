@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">KatAn</string>
+    <string name="name">KatAn</string>
+    <string name="back">button back</string>
+    <string name="library">Library</string>
+    <string name="start">Начать</string>
+    <string name="level1">Урок 1</string>
+    <string name="level2">Урок 2</string>
+    <string name="level3">Урок 3</string>
+    <string name="level4">Урок 4</string>
+    <string name="level5">Урок 5</string>
+    <string name="level6">Урок 6</string>
+</resources>
