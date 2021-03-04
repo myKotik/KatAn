@@ -64,7 +64,7 @@
             android:id="@+id/start"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
-            android:background="@null"
+            android:background=""
             android:text="@string/start"
             android:textSize="22sp"
             android:fontFamily="@font/sjis_sp_setofont"
