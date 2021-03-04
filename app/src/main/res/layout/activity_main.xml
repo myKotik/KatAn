@@ -60,18 +60,14 @@
             android:src="@drawable/one"
             android:contentDescription="@string/start"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/start"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:background=""
-            android:text="@string/start"
-            android:textSize="22sp"
-            android:fontFamily="@font/sjis_sp_setofont"
-            android:textColor="@color/lorange"
-            android:layout_gravity="center"/>
+            android:layout_width="170dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center"
+            android:background="@drawable/name"
+            android:contentDescription="@string/start" />
 
     </FrameLayout>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
