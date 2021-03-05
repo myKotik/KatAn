@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageButton start = findViewById(R.id.start);
+        Button start = findViewById(R.id.start);
 
         start.setOnClickListener(v -> {
             try {
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             } catch (Exception e) {
-
+                
             }
         });
 
