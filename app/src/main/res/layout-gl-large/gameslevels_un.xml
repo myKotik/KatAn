@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="clip_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="130dp"
+            android:layout_height="90dp"
+            android:layout_marginStart="@dimen/defaul_margin_16"
+            android:layout_marginTop="@dimen/defaul_margin_16"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/back"
+            android:scaleType="fitStart"
+            app:srcCompat="@drawable/btn_back" />
+
+        <ImageButton
+            android:id="@+id/library"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:background="#00FFFFFF"
+            android:contentDescription="@string/library"
+            android:scaleType="fitEnd"
+            app:srcCompat="@drawable/clz_book" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttons">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="36dp"
+            android:layout_gravity="center"
+            android:columnCount="2"
+            >
+
+            <LinearLayout
+                android:id="@+id/levelone"
+                style="@style/linear_gl_large">
+
+                <TextView
+                    android:id="@+id/level_one"
+                    android:text="@string/level1"
+                    style="@style/text_gl_large" />
+
+                <ImageButton
+                    android:id="@+id/Level_One"
+                    style="@style/imgBtn_gl_large"
+                    android:src="@drawable/level_one"
+                    android:contentDescription="@string/Description"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/leveltwo"
+                style="@style/linear_gl_large">
+
+                <TextView
+                    android:id="@+id/level_two"
+                    android:text="@string/level2"
+                    style="@style/text_gl_large"/>
+
+                <ImageButton
+                    android:id="@+id/Level_Two"
+                    style="@style/imgBtn_gl_large"
+                    android:src="@drawable/level_two" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/levelthree"
+                style="@style/linear_gl_large">
+
+                <TextView
+                    android:id="@+id/level_three"
+                    android:text="@string/level3"
+                    style="@style/text_gl_large" />
+
+                <ImageButton
+                    android:id="@+id/Level_Three"
+                    style="@style/imgBtn_gl_large"
+                    android:src="@drawable/level_three"
+                    android:contentDescription="@string/Description"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/levelfour"
+                style="@style/linear_gl_large">
+
+                <TextView
+                    android:id="@+id/level_four"
+                    android:text="@string/level4"
+                    style="@style/text_gl_large" />
+
+                <ImageButton
+                    android:id="@+id/Level_Four"
+                    style="@style/imgBtn_gl_large"
+                    android:src="@drawable/level_four"
+                    android:contentDescription="@string/Description"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/levelfive"
+                style="@style/linear_gl_large">
+
+                <TextView
+                    android:id="@+id/level_five"
+                    android:text="@string/level5"
+                    style="@style/text_gl_large" />
+
+                <ImageButton
+                    android:id="@+id/Level_Five"
+                    style="@style/imgBtn_gl_large"
+                    android:src="@drawable/level_five"
+                    android:contentDescription="@string/Description"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/levelsix"
+                style="@style/linear_gl_large">
+
+                <TextView
+                    android:id="@+id/level_six"
+                    android:text="@string/level6"
+                    style="@style/text_gl_large" />
+
+                <ImageButton
+                    android:id="@+id/Level_Six"
+                    android:src="@drawable/level_one"
+                    style="@style/imgBtn_gl_large"
+                    android:contentDescription="@string/Description"/>
+            </LinearLayout>
+        </GridLayout>
+    </ScrollView>
+</RelativeLayout>

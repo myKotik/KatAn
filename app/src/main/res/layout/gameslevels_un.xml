@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-
     <LinearLayout
         android:id="@+id/buttons"
         android:layout_width="match_parent"
@@ -53,97 +52,102 @@
 
             <LinearLayout
                 android:id="@+id/levelone"
-                style="@style/linear_level">
+                style="@style/linear_gl_normal">
 
                 <TextView
                     android:id="@+id/level_one"
                     android:text="@string/level1"
-                    style="@style/level_text" />
+                    style="@style/text_gl_normal" />
 
                 <ImageButton
                     android:id="@+id/Level_One"
-                    style="@style/level_imgBtn"
-                    android:src="@drawable/level_one" />
+                    android:src="@drawable/level_one"
+                    style="@style/imgBtn_gl_normal"
+                    android:contentDescription="@string/Description"
+                    />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/leveltwo"
-                style="@style/linear_level">
+                style="@style/linear_gl_normal">
 
                 <TextView
                     android:id="@+id/level_two"
                     android:text="@string/level2"
-                    style="@style/level_text"/>
+                    style="@style/text_gl_normal"/>
 
                 <ImageButton
                     android:id="@+id/Level_Two"
-                    style="@style/level_imgBtn"
-                    android:src="@drawable/level_two" />
+                    android:src="@drawable/level_two"
+                    style="@style/imgBtn_gl_normal"
+                    android:contentDescription="@string/Description"
+                    />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/levelthree"
-                style="@style/linear_level">
+                style="@style/linear_gl_normal">
 
                 <TextView
                     android:id="@+id/level_three"
                     android:text="@string/level3"
-                    style="@style/level_text" />
+                    style="@style/text_gl_normal" />
 
                 <ImageButton
                     android:id="@+id/Level_Three"
-                    style="@style/level_imgBtn"
-                    android:src="@drawable/level_three" />
+                    android:src="@drawable/level_three"
+                    style="@style/imgBtn_gl_normal"
+                    android:contentDescription="@string/Description"/>
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/levelfour"
-                style="@style/linear_level">
+                style="@style/linear_gl_normal">
 
                 <TextView
                     android:id="@+id/level_four"
                     android:text="@string/level4"
-                    style="@style/level_text" />
+                    style="@style/text_gl_normal" />
 
                 <ImageButton
                     android:id="@+id/Level_Four"
-                    style="@style/level_imgBtn"
-                    android:src="@drawable/level_four" />
+                    android:src="@drawable/level_four"
+                    style="@style/imgBtn_gl_normal"
+                    android:contentDescription="@string/Description"/>
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/levelfive"
-                style="@style/linear_level">
+                style="@style/linear_gl_normal">
 
                 <TextView
                     android:id="@+id/level_five"
                     android:text="@string/level5"
-                    style="@style/level_text" />
+                    style="@style/text_gl_normal" />
 
                 <ImageButton
                     android:id="@+id/Level_Five"
-                    style="@style/level_imgBtn"
-                    android:src="@drawable/level_five" />
+                    android:src="@drawable/level_five"
+                    style="@style/imgBtn_gl_normal"
+                    android:contentDescription="@string/Description"
+                    />
             </LinearLayout>
 
             <LinearLayout
                 android:id="@+id/levelsix"
-                style="@style/linear_level">
+                style="@style/linear_gl_normal">
 
                 <TextView
                     android:id="@+id/level_six"
                     android:text="@string/level6"
-                    style="@style/level_text" />
+                    style="@style/text_gl_normal" />
 
                 <ImageButton
                     android:id="@+id/Level_Six"
                     android:src="@drawable/level_one"
-                    style="@style/level_imgBtn" />
+                    android:contentDescription="@string/Description"
+                    style="@style/imgBtn_gl_normal" />
             </LinearLayout>
-
-
         </GridLayout>
     </ScrollView>
-
-
 </RelativeLayout>
