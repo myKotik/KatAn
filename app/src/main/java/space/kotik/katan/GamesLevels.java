@@ -14,7 +14,7 @@ public class GamesLevels extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.gameslevels_un);
+        setContentView(R.layout.gameslevels);
 
         ImageButton back = findViewById(R.id.btn_back);
 
