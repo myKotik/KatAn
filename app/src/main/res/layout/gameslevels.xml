@@ -23,7 +23,7 @@
             android:background="#00FFFFFF"
             android:contentDescription="@string/back"
             android:scaleType="fitStart"
-            app:srcCompat="@drawable/btn_back" />
+            android:src="@drawable/btn_back" />
 
         <ImageButton
             android:id="@+id/library"
@@ -34,7 +34,7 @@
             android:background="#00FFFFFF"
             android:contentDescription="@string/library"
             android:scaleType="fitEnd"
-            app:srcCompat="@drawable/clz_book" />
+            android:src="@drawable/clz_book" />
     </LinearLayout>
 
     <ScrollView

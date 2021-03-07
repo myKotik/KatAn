@@ -11,4 +11,5 @@
     <string name="level4" translatable="false">Урок 4</string>
     <string name="level5" translatable="false">Урок 5</string>
     <string name="level6" translatable="false">Урок 6</string>
+    <string name="levelOne" translatable="false">Урок 1: простые фигуры.</string>
 </resources>
