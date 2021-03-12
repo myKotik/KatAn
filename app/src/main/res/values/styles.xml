@@ -111,10 +111,16 @@
     <style name="level_name_normal">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">match_parent</item>
-        <item name="android:layout_marginTop">16dp</item>
-        <item name="android:layout_marginStart">10dp</item>
         <item name="android:textSize">22sp</item>
         <item name="android:textColor">@color/lorange</item>
         <item name="android:fontFamily">@font/sjis_sp_setofont</item>
+    </style>
+
+    <style name="text_normal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/sjis_sp_setofont</item>
+        <item name="android:textColor">@color/lorange</item>
+        <item name="android:textSize">20sp</item>
     </style>
 </resources>

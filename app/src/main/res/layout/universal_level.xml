@@ -21,6 +21,7 @@
             android:layout_height="50dp"
             android:layout_marginStart="@dimen/defaul_margin_16"
             android:layout_marginTop="@dimen/defaul_margin_16"
+            android:layout_marginEnd="16dp"
             android:background="#00FFFFFF"
             android:contentDescription="@string/back"
             android:scaleType="fitStart"
@@ -31,4 +32,77 @@
             android:text="@string/levelOne"
             style="@style/level_name_normal" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="70dp">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/katan" />
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="360dp"
+            android:layout_gravity="center"
+            android:background="@drawable/text_level">
+
+            <ScrollView
+                android:layout_width="200dp"
+                android:layout_height="295dp"
+                android:layout_marginTop="33dp"
+                android:layout_marginStart="40dp">
+
+                <TextView
+                android:id="@+id/one"
+                    style="@style/text_normal" />
+            </ScrollView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/slide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="450dp"
+        android:orientation="vertical">
+
+        <ImageSwitcher
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_gravity="center">
+
+        </ImageSwitcher>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back"
+                android:scaleType="fitCenter"
+                android:background="@color/no"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/go"
+                android:scaleType="fitCenter"
+                android:background="@color/no"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
 </RelativeLayout>
