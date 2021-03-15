@@ -116,11 +116,50 @@
         <item name="android:fontFamily">@font/sjis_sp_setofont</item>
     </style>
 
+    <style name="level_name_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/lorange</item>
+        <item name="android:fontFamily">@font/sjis_sp_setofont</item>
+    </style>
+
+    <style name="level_name_large">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/lorange</item>
+        <item name="android:fontFamily">@font/sjis_sp_setofont</item>
+    </style>
+
+    <style name="level_name_xlarge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/lorange</item>
+        <item name="android:fontFamily">@font/sjis_sp_setofont</item>
+    </style>
+
+
     <style name="text_normal">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">@font/sjis_sp_setofont</item>
         <item name="android:textColor">@color/lorange</item>
         <item name="android:textSize">20sp</item>
+    </style>
+    <style name="text_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/sjis_sp_setofont</item>
+        <item name="android:textColor">@color/lorange</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="text_large">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/sjis_sp_setofont</item>
+        <item name="android:textColor">@color/lorange</item>
+        <item name="android:textSize">30sp</item>
     </style>
 </resources>

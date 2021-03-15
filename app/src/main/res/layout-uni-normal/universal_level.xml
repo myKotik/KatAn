@@ -91,7 +91,7 @@
         <ImageSwitcher
             android:id="@+id/ImageSwitcher"
             android:layout_width="match_parent"
-            android:layout_height="225dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:onClick="onClick">
         </ImageSwitcher>
@@ -102,25 +102,13 @@
             android:orientation="horizontal">
 
             <ImageButton
-                android:id="@+id/buttonPrev"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:src="@drawable/back"
-                android:scaleType="fitStart"
-                android:background="@color/no"
-                android:layout_weight="1"
-                android:contentDescription="@string/go" />
-
-            <ImageButton
-                android:id="@+id/buttonForward"
-                android:layout_width="0dp"
+                android:id="@+id/forward"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/go"
                 android:scaleType="fitEnd"
-                android:layout_weight="1"
                 android:background="@color/no"
                 android:contentDescription="@string/go" />
-
         </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

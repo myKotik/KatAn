@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">KatAn</string>
     <string name="name" translatable="false">KatAn</string>
+    <string name="go" translatable="false">вперед</string>
     <string name="Description" translatable="false">Картинка для выбора уровней</string>
     <string name="back" translatable="false">button back</string>
     <string name="library" translatable="false">Library</string>
@@ -12,5 +13,12 @@
     <string name="level5" translatable="false">Урок 5</string>
     <string name="level6" translatable="false">Урок 6</string>
     <string name="levelOne" translatable="false">Урок 1: простые фигуры.</string>
-    <string name="level_one" translatable="false">Надменная “Златовласка” возрождает древнюю войну в Асгарде, за что его ссылают на землю. И вот наш герой в своем нелепом костюме, длинными локонами и без супер сил должен скитаться и жить среди смертных. Завязка для будущих мстителей.</string>
+    <string name="level_one" translatable="false">Шар
+1) Нарисуйте круг.
+Не стоит переживать если он кривой, со временем вы научитесь рисовать его ровно.
+Так же нужно отметить источник света(рис 1).
+Он нужен нам чтобы определить где на предмете будет блик(самый светлый участок на предмете), а где будет тень.
+Посмотрев на предметы вокруг вас, вы сможете увидеть тени отходящие от предмета. К примеру если свет падает сверху и поднять карандаш, то тень будет располагаться под ним, а если приложить к бумаге одним концом, то можно увидеть как тень сама присоединяется к карандашу, такая тень называется падающей.
+2) Рисуем падающею тень и тень на шаре(2 и 3 рисунок). Тень всегда противоположна источнику света и находится за объектом.
+3) В конечном итоге мы должны затемнить все имеющиеся тени и сделать плавный переход между тонами.</string>
 </resources>

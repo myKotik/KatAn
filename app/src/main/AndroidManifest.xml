@@ -8,6 +8,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KatAn">
+
+
         <activity android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -17,6 +19,7 @@
             </intent-filter>
         </activity>
 
+
         <activity android:name=".GamesLevels"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -25,6 +28,7 @@
 
             </intent-filter>
         </activity>
+
 
         <activity android:name=".LevelOne"
             android:screenOrientation="portrait">
