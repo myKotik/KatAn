@@ -2,6 +2,7 @@
     <string name="app_name" translatable="false">KatAn</string>
     <string name="name" translatable="false">KatAn</string>
     <string name="go" translatable="false">вперед</string>
+    <string name="picture" translatable="false">объяснение уроков</string>
     <string name="Description" translatable="false">Картинка для выбора уровней</string>
     <string name="back" translatable="false">button back</string>
     <string name="library" translatable="false">Library</string>
