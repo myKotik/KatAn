@@ -1,6 +1,7 @@
 package space.kotik.katan;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -56,6 +57,11 @@ R.drawable.one1, R.drawable.one2, R.drawable.one3, R.drawable.one4, R.drawable.o
                 e.printStackTrace();
             }
         });
+
+
+        ViewPager viewPager = findViewById(R.id.viewPager);
+        ImageAdapter adapter = new ImageAdapter(this);
+        viewPager.setAdapter(adapter);
     }
 
 

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,10 +7,7 @@
 
 
     <LinearLayout
-        android:id="@+id/btn_text"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/verh"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -21,94 +17,87 @@
 
         <ImageButton
             android:id="@+id/btn_back"
-            android:layout_width="90dp"
-            android:layout_height="50dp"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
             android:layout_marginStart="@dimen/defaul_margin_16"
             android:layout_marginTop="@dimen/defaul_margin_16"
-            android:layout_marginEnd="16dp"
+            android:layout_marginEnd="22dp"
             android:background="#00FFFFFF"
             android:contentDescription="@string/back"
             android:scaleType="fitStart"
-            android:src="@drawable/btn_back"/>
+            android:src="@drawable/btn_back" />
 
         <TextView
             android:id="@+id/textView"
+            style="@style/level_name_large"
             android:letterSpacing="-0.1"
-            android:text="@string/levelOne"
-            style="@style/level_name_normal" />
+            android:text="@string/levelOne" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_text"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/text_scroller"
         android:layout_width="match_parent"
-        android:layout_height="390dp"
-        android:orientation="horizontal">
-
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verh"
+        android:layout_alignParentStart="true">
 
         <ImageView
-            android:id="@+id/imageView"
-            android:layout_gravity="center"
-            android:layout_width="120dp"
-            android:layout_height="120dp"
-            android:layout_marginStart="8dp"
-            app:srcCompat="@drawable/katan"
-            android:contentDescription="@string/app_name" />
+            android:id="@+id/image_text"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:rotation="90"
+            android:scaleType="fitCenter"
+            android:src="@drawable/text_level"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/text_level">
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+            android:scrollbars="none"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <ScrollView
-                android:layout_width="210dp"
-                android:layout_height="320dp"
-                android:layout_marginTop="35dp"
-                android:layout_marginStart="40dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <TextView
-                android:id="@+id/one"
-                android:letterSpacing="-0.2"
-                style="@style/text_normal" />
-            </ScrollView>
-        </LinearLayout>
+                    android:id="@+id/one"
+                    style="@style/text_normal"
+                    android:letterSpacing="-0.2" />
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/text_scroller"
+        android:layout_above="@id/footer"
+        android:layout_alignParentStart="true"/>
 
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/slide"
-        android:layout_width="410dp"
-        android:layout_height="270dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/viewPager"
-            android:layout_width="wrap_content"
-            android:layout_height="220dp"
-
-            />
         <LinearLayout
+            android:id="@+id/footer"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
 
             <ImageButton
-                android:id="@+id/buttonForward"
+                android:id="@+id/forward"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@color/no"
                 android:contentDescription="@string/go"
                 android:scaleType="fitEnd"
                 android:src="@drawable/go" />
-
         </LinearLayout>
-    </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
