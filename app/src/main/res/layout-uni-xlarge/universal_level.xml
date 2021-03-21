@@ -7,7 +7,7 @@
 
 
     <LinearLayout
-        android:id="@+id/verh"
+        android:id="@+id/up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -38,7 +38,7 @@
         android:id="@+id/text_scroller"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/verh"
+        android:layout_below="@id/up"
         android:background="@drawable/description"
         android:layout_alignParentStart="true">
 
