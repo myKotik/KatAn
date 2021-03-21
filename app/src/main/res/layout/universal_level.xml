@@ -17,8 +17,8 @@
 
         <ImageButton
             android:id="@+id/btn_back"
-            android:layout_width="120dp"
-            android:layout_height="80dp"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
             android:layout_marginStart="@dimen/defaul_margin_16"
             android:layout_marginTop="@dimen/defaul_margin_16"
             android:layout_marginEnd="22dp"
@@ -29,7 +29,7 @@
 
         <TextView
             android:id="@+id/textView"
-            style="@style/level_name_large"
+            style="@style/level_name_normal"
             android:letterSpacing="-0.1"
             android:text="@string/levelOne" />
     </LinearLayout>
@@ -39,23 +39,25 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/verh"
+        android:background="@drawable/description"
         android:layout_alignParentStart="true">
 
         <ImageView
             android:id="@+id/image_text"
             android:layout_width="match_parent"
             android:layout_height="370dp"
-            android:rotation="90"
             android:scaleType="fitCenter"
-            android:src="@drawable/text_level"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ScrollView
             android:id="@+id/scroll"
-            android:layout_width="match_parent"
-            android:layout_height="370dp"
+            android:layout_width="360dp"
+            android:layout_height="320dp"
             android:scrollbars="none"
+            android:layout_marginStart="22dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/image_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 

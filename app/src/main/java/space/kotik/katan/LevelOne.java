@@ -14,23 +14,6 @@ import android.widget.TextView;
 
 public class LevelOne extends AppCompatActivity {
 
-   /* private Context mContext;
-    private int[] mImageIds = new int[]{
-R.drawable.one1, R.drawable.one2, R.drawable.one3, R.drawable.one4, R.drawable.one5, R.drawable.one6,
-            R.drawable.one7, R.drawable.one8, R.drawable.one9, R.drawable.one10, R.drawable.one11, R.drawable.one12,
-            R.drawable.one13, R.drawable.one14, R.drawable.one15, R.drawable.one16, R.drawable.one17, R.drawable.one18,
-            R.drawable.one19, R.drawable.one20
-    };
-   void ImageAdapter(Context context){
-        mContext = context;}
-    public int getCount(){
-       return mImageIds.length;}
-    public boolean isViewFormObject(View view, Object object){
-       return false;}
-    @Override
-            public Object instantiateItem*/
-
-
     TextView text;
 
     @SuppressLint("SetJavaScriptEnabled")
