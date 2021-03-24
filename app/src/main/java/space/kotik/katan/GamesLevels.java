@@ -50,6 +50,21 @@ public class GamesLevels extends AppCompatActivity {
             }
         });
 
+        ImageButton leveltwo = findViewById(R.id.Level_Two);
+        //кнопка на второй уровень
+        leveltwo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GamesLevels.this, LevelTwo.class);
+                    startActivity(intent);
+                    finish();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
     }
 
     //системная кнопка назад

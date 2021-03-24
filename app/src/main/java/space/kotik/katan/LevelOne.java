@@ -28,9 +28,9 @@ public class LevelOne extends AppCompatActivity {
         text = (TextView) findViewById(R.id.one);
                 text.setText(getResources().getString(R.string.level_one));
 
-                //кнопка назад
-        ImageButton back = findViewById(R.id.btn_back);
 
+        ImageButton back = findViewById(R.id.btn_back);
+        //кнопка назад
         back.setOnClickListener(v -> {
             try {
                 Intent intent = new Intent(LevelOne.this, GamesLevels.class);
@@ -38,6 +38,21 @@ public class LevelOne extends AppCompatActivity {
                 finish();
             } catch (Exception e) {
                 e.printStackTrace();
+            }
+        });
+
+        ImageButton go = findViewById(R.id.forward);
+        // кнопка перехода из уровень в следующий
+        go.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(LevelOne.this, LevelTwo.class);
+                    startActivity(intent);
+                    finish();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
             }
         });
 

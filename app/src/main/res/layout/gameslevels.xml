@@ -143,7 +143,7 @@
 
                 <ImageButton
                     android:id="@+id/Level_Six"
-                    android:src="@drawable/level_one"
+                    android:src="@drawable/level_six"
                     android:contentDescription="@string/Description"
                     style="@style/imgBtn_gl_normal" />
             </LinearLayout>

@@ -24,7 +24,7 @@ public class LevelTwo extends AppCompatActivity {
 
         //загружаем текст уровня
         text = (TextView) findViewById(R.id.one);
-                text.setText(getResources().getString(R.string.level_one));
+                text.setText(getResources().getString(R.string.level_two));
 
                 //кнопка назад
         ImageButton back = findViewById(R.id.btn_back);
