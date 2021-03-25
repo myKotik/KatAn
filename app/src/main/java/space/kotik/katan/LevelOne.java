@@ -4,12 +4,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 
 public class LevelOne extends AppCompatActivity {
@@ -32,13 +36,7 @@ public class LevelOne extends AppCompatActivity {
         ImageButton back = findViewById(R.id.btn_back);
         //кнопка назад
         back.setOnClickListener(v -> {
-            try {
-                Intent intent = new Intent(LevelOne.this, GamesLevels.class);
-                startActivity(intent);
-                finish();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+           onBackPressed();
         });
 
         ImageButton go = findViewById(R.id.forward);
@@ -46,33 +44,31 @@ public class LevelOne extends AppCompatActivity {
         go.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try {
-                    Intent intent = new Intent(LevelOne.this, LevelTwo.class);
-                    startActivity(intent);
-                    finish();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+                OpenActivity(new LevelTwo());
             }
         });
 
 
         ViewPager viewPager = findViewById(R.id.viewPager);
-        ImageAdapter adapter = new ImageAdapter(this);
+        int[]  mImageIds = new int[]{R.drawable.btn_back, R.drawable.btn_back, R.drawable.btn_back, R.drawable.btn_back, R.drawable.btn_back};
+        ImageAdapter adapter = new ImageAdapter(this,  mImageIds);
         viewPager.setAdapter(adapter);
     }
 
+    public void OpenActivity(Activity activity) {
+        try {
+            Intent intent = new Intent(this, activity.getClass());
+            startActivity(intent);
+            this.finish();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 
 
     //системная кнопка назад
     @Override
     public void onBackPressed(){
-        try {
-            Intent intent = new Intent(LevelOne.this, GamesLevels.class);
-            startActivity(intent);
-            finish();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+super.onBackPressed();
     }
 }
