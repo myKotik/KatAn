@@ -14,6 +14,7 @@ public class ImageAdapter extends PagerAdapter {
         mContext = context;
         mImageIds = ArrayImages;
     }
+
     @Override
     public int getCount() {
         return mImageIds.length;

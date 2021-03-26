@@ -1,22 +1,17 @@
 package space.kotik.katan;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-
-import android.annotation.SuppressLint;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 
-public class LevelOne extends AppCompatActivity {
+public class LevelFive extends AppCompatActivity {
 
     TextView text;
     TextView lesson;
@@ -30,10 +25,10 @@ public class LevelOne extends AppCompatActivity {
 
         //загружаем текст уровня
         text = (TextView) findViewById(R.id.one);
-                text.setText(getResources().getString(R.string.level_one));
+                text.setText(getResources().getString(R.string.level_three));
 
         lesson = (TextView) findViewById(R.id.lesson);
-        lesson.setText(getResources().getString(R.string.lessonone));
+        lesson.setText(getResources().getString(R.string.lessonfive));
 
 
         ImageButton back = findViewById(R.id.btn_back);
@@ -48,7 +43,7 @@ public class LevelOne extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(LevelOne.this, LevelTwo.class);
+                    Intent intent = new Intent(LevelFive.this, LevelSix.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception e) {
@@ -59,15 +54,13 @@ public class LevelOne extends AppCompatActivity {
 
 
         ViewPager viewPager = findViewById(R.id.viewPager);
-        int[]  mImageIds = new int[]{R.drawable.one1, R.drawable.one2, R.drawable.one3, R.drawable.one4, R.drawable.one5,
-                R.drawable.one6, R.drawable.one7, R.drawable.one8, R.drawable.one9, R.drawable.one10,
-                R.drawable.one11, R.drawable.one12, R.drawable.one13, R.drawable.one14, R.drawable.one15,
-                R.drawable.one16, R.drawable.one17, R.drawable.one18, R.drawable.one19, R.drawable.one20};
+        int[]  mImageIds = new int[]{R.drawable.three1, R.drawable.three2, R.drawable.three3, R.drawable.three4, R.drawable.three5,
+                R.drawable.three6, R.drawable.three7, R.drawable.three8, R.drawable.three9};
         ImageAdapter adapter = new ImageAdapter(this,  mImageIds);
         viewPager.setAdapter(adapter);
     }
 
-   /* public void OpenActivity(Activity activity) {
+    public void OpenActivity(Activity activity) {
         try {
             Intent intent = new Intent(this, activity.getClass());
             startActivity(intent);
@@ -75,7 +68,7 @@ public class LevelOne extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }*/
+    }
 
 
     //системная кнопка назад

@@ -1,22 +1,16 @@
 package space.kotik.katan;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
-
-import android.annotation.SuppressLint;
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.viewpager.widget.ViewPager;
 
 
-public class LevelOne extends AppCompatActivity {
+public class LevelSix extends AppCompatActivity {
 
     TextView text;
     TextView lesson;
@@ -33,7 +27,7 @@ public class LevelOne extends AppCompatActivity {
                 text.setText(getResources().getString(R.string.level_one));
 
         lesson = (TextView) findViewById(R.id.lesson);
-        lesson.setText(getResources().getString(R.string.lessonone));
+        lesson.setText(getResources().getString(R.string.lessonsix));
 
 
         ImageButton back = findViewById(R.id.btn_back);
@@ -48,7 +42,7 @@ public class LevelOne extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    Intent intent = new Intent(LevelOne.this, LevelTwo.class);
+                    Intent intent = new Intent(LevelSix.this, GamesLevels.class);
                     startActivity(intent);
                     finish();
                 } catch (Exception e) {

@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.transition.Scene;
 import android.view.View;
 import android.webkit.WebSettings;
@@ -17,7 +19,7 @@ import android.widget.Toast;
 public class GamesLevels extends AppCompatActivity {
 
 
-    @SuppressLint("SetJavaScriptEnabled")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +45,6 @@ public class GamesLevels extends AppCompatActivity {
                 try {
                     Intent intent = new Intent(GamesLevels.this, LevelOne.class);
                     startActivity(intent);
-                    finish();
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -58,7 +59,62 @@ public class GamesLevels extends AppCompatActivity {
                 try {
                     Intent intent = new Intent(GamesLevels.this, LevelTwo.class);
                     startActivity(intent);
-                    finish();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        ImageButton levelthree = findViewById(R.id.Level_Three);
+        //кнопка на третий уровень
+        levelthree.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GamesLevels.this, LevelThree.class);
+                    startActivity(intent);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        ImageButton levelfour = findViewById(R.id.Level_Four);
+        //кнопка на четвертый уровень
+        levelfour.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GamesLevels.this, LevelFour.class);
+                    startActivity(intent);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        ImageButton levelfive = findViewById(R.id.Level_Five);
+        //кнопка на пятый уровень
+        levelfive.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GamesLevels.this, LevelFive.class);
+                    startActivity(intent);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        ImageButton levelsix = findViewById(R.id.Level_Six);
+        //кнопка на шестой уровень
+        levelsix.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    Intent intent = new Intent(GamesLevels.this, LevelSix.class);
+                    startActivity(intent);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
