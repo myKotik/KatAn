@@ -37,6 +37,17 @@ public class GamesLevels extends AppCompatActivity {
             }
         });
 
+        ImageButton lib = findViewById(R.id.library);
+        //кнопка в библиотеку
+        lib.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent I = new Intent(GamesLevels.this, Library.class);
+                startActivity(I);
+                finish();
+            }
+        });
+
         ImageButton levelone = findViewById(R.id.Level_One);
         //кнопка на первый уровень
         levelone.setOnClickListener(new View.OnClickListener() {

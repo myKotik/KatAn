@@ -13,6 +13,10 @@
     <string name="level4" translatable="false">Урок 4</string>
     <string name="level5" translatable="false">Урок 5</string>
     <string name="level6" translatable="false">Урок 6</string>
+    <string name="book1" translatable="false">Баммес Готфрид: Образ человека.</string>
+    <string name="book2" translatable="false">Баммес Готфрид: Образ человека.</string>
+    <string name="book3" translatable="false">Барбер Баррингтон: Анатомия для художников.</string>
+    <string name="book4" translatable="false">Бёрн Хогарт: Динамическая анатомия для художников.</string>
     <string name="lessonone" translatable="false">Урок 1: простые фигуры.</string>
     <string name="lessontwo" translatable="false">Урок 2: цвета.</string>
     <string name="lessonthree" translatable="false">Урок 3: композиция.</string>

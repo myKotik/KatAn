@@ -8,9 +8,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.KatAn">
-
-
-        <activity android:name=".MainActivity"
+        <activity android:name=".Book1"></activity>
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,73 +18,62 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
-        <activity android:name=".GamesLevels"
+        <activity
+            android:name=".GamesLevels"
             android:screenOrientation="portrait">
             <intent-filter>
-
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
         </activity>
-
-
-        <activity android:name=".LevelOne"
+        <activity
+            android:name=".LevelOne"
             android:screenOrientation="portrait">
             <intent-filter>
-
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
         </activity>
-
-        <activity android:name=".LevelTwo"
+        <activity
+            android:name=".LevelTwo"
             android:screenOrientation="portrait">
             <intent-filter>
-
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
         </activity>
-
-        <activity android:name=".LevelThree"
+        <activity
+            android:name=".LevelThree"
             android:screenOrientation="portrait">
             <intent-filter>
-
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
         </activity>
-
-        <activity android:name=".LevelFour"
+        <activity
+            android:name=".LevelFour"
             android:screenOrientation="portrait">
             <intent-filter>
-
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
         </activity>
-
-        <activity android:name=".LevelFive"
+        <activity
+            android:name=".LevelFive"
             android:screenOrientation="portrait">
             <intent-filter>
-
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
         </activity>
-
-
-        <activity android:name=".LevelSix"
+        <activity
+            android:name=".LevelSix"
             android:screenOrientation="portrait">
             <intent-filter>
-
                 <category android:name="android.intent.category.LAUNCHER" />
-
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".Library"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

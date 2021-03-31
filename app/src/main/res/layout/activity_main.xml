@@ -42,34 +42,4 @@
             android:contentDescription="@string/name"
             android:src="@drawable/logo" />
     </LinearLayout>
-
-    <FrameLayout
-        android:layout_width="230dp"
-        android:layout_height="130dp"
-        android:layout_marginBottom="36dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="WebViewLayout">
-
-        <ImageView
-            android:id="@+id/btn"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/start"
-            android:src="@drawable/one" />
-
-        <Button
-            android:id="@+id/start"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/transparent"
-            android:fontFamily="@font/sjis_sp_setofont"
-            android:text="@string/start"
-            android:textAllCaps="true"
-            android:textColor="@color/lorange"
-            android:textSize="24sp" />
-
-    </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
