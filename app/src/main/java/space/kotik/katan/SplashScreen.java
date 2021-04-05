@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class SplashScreen extends AppCompatActivity {
 
 
-    private final int SPLASH_DISPLAY_LENGHT = 5000;
+    private final int SPLASH_DISPLAY_LENGHT = 3000;
     private long backPressedTime;
     private Toast backToast;
 

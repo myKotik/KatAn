@@ -19,7 +19,7 @@ import android.widget.Toast;
 public class Library extends AppCompatActivity {
 
 
-    TextView book1, book4, book3, book2;
+    Button btn_book1, btn_book4, btn_book3, btn_book2;
 
     @SuppressLint("SetJavaScriptEnabled")
     @Override
@@ -39,12 +39,12 @@ public class Library extends AppCompatActivity {
             }
         });
 
-        book1 = (TextView)findViewById(R.id.book1);
-        book2 = (TextView)findViewById(R.id.book2);
-        book3 = (TextView)findViewById(R.id.book3);
-        book4 = (TextView)findViewById(R.id.book4);
+        btn_book1 = (Button)findViewById(R.id.book_1);
+        btn_book2 = (Button)findViewById(R.id.book_2);
+        btn_book3 = (Button)findViewById(R.id.book_3);
+        btn_book4 = (Button)findViewById(R.id.book_4);
 
-        book1.setOnClickListener(new View.OnClickListener() {
+        btn_book1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -53,7 +53,7 @@ public class Library extends AppCompatActivity {
             }
         });
 
-        book2.setOnClickListener(new View.OnClickListener() {
+        btn_book2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i2 = new Intent(Library.this, Book2.class);
@@ -61,7 +61,7 @@ public class Library extends AppCompatActivity {
             }
         });
 
-        book3.setOnClickListener(new View.OnClickListener() {
+        btn_book3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i3 = new Intent(Library.this, Book3.class);
@@ -69,7 +69,7 @@ public class Library extends AppCompatActivity {
             }
         });
 
-        book4.setOnClickListener(new View.OnClickListener() {
+        btn_book4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i4 = new Intent(Library.this, Book4.class);

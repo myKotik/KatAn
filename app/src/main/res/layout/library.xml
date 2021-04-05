@@ -43,49 +43,53 @@
             android:orientation="vertical"
             >
 
-            <TextView
-                android:id="@+id/book1"
+            <Button
+                android:id="@+id/book_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/book1"
                 android:textColor="@color/lorange"
                 android:textSize="30sp"
                 android:fontFamily="@font/sjis_sp_setofont"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="50dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"/>
 
-            <TextView
-                android:id="@+id/book2"
+            <Button
+                android:id="@+id/book_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/book2"
                 android:textColor="@color/lorange"
                 android:textSize="30sp"
                 android:fontFamily="@font/sjis_sp_setofont"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="50dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"/>
 
-            <TextView
-                android:id="@+id/book3"
+            <Button
+                android:id="@+id/book_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/book3"
                 android:textColor="@color/lorange"
                 android:textSize="30sp"
                 android:fontFamily="@font/sjis_sp_setofont"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="50dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"/>
 
-            <TextView
-                android:id="@+id/book4"
+            <Button
+                android:id="@+id/book_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/book4"
                 android:textColor="@color/lorange"
                 android:textSize="30sp"
                 android:fontFamily="@font/sjis_sp_setofont"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="50dp"/>
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"/>
         </LinearLayout>
     </ScrollView>
 

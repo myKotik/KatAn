@@ -2,6 +2,7 @@ package space.kotik.katan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import com.github.barteksc.pdfviewer.PDFView;

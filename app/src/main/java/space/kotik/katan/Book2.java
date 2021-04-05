@@ -14,7 +14,7 @@ public class Book2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book2);
 
-        book2 = (PDFView)findViewById(R.id.pdfbook1);
+        book2 = (PDFView)findViewById(R.id.pdfbook2);
 
         book2.fromAsset("book_two.pdf").load();
     }
