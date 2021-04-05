@@ -2,19 +2,10 @@ package space.kotik.katan;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
-import android.transition.Scene;
 import android.view.View;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class GamesLevels extends AppCompatActivity {
 
@@ -29,7 +20,7 @@ public class GamesLevels extends AppCompatActivity {
         //кнопка назад
         back.setOnClickListener(v -> {
             try {
-                Intent intent = new Intent(GamesLevels.this, MainActivity.class);
+                Intent intent = new Intent(GamesLevels.this, SplashScreen.class);
                 startActivity(intent);
                 finish();
             } catch (Exception e) {
@@ -138,7 +129,7 @@ public class GamesLevels extends AppCompatActivity {
     @Override
     public void onBackPressed(){
         try {
-            Intent intent = new Intent(GamesLevels.this, MainActivity.class);
+            Intent intent = new Intent(GamesLevels.this, SplashScreen.class);
             startActivity(intent);
             finish();
         } catch (Exception e) {
