@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "705639655814",
+    "project_id": "katan-662d9",
+    "storage_bucket": "katan-662d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705639655814:android:d595a4fb63f56ba935a407",
+        "android_client_info": {
+          "package_name": "space.kotik.katan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705639655814-m61uheq7jk4t6tk5h9rmeuuolfulql96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoWD83JN_B1kieb0cdK3lifXMM7X2ZbY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705639655814-m61uheq7jk4t6tk5h9rmeuuolfulql96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
