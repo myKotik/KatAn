@@ -44,10 +44,7 @@ public class LevelSix extends AppCompatActivity {
         });
 
         ViewPager viewPager = findViewById(R.id.viewPager);
-        int[]  mImageIds = new int[]{R.drawable.one1, R.drawable.one2, R.drawable.one3, R.drawable.one4, R.drawable.one5,
-                R.drawable.one6, R.drawable.one7, R.drawable.one8, R.drawable.one9, R.drawable.one10,
-                R.drawable.one11, R.drawable.one12, R.drawable.one13, R.drawable.one14, R.drawable.one15,
-                R.drawable.one16, R.drawable.one17, R.drawable.one18, R.drawable.one19, R.drawable.one20};
+        int[]  mImageIds = new int[]{R.drawable.six1, R.drawable.six2, R.drawable.six3};
         ImageAdapter adapter = new ImageAdapter(this,  mImageIds);
         viewPager.setAdapter(adapter);
     }
