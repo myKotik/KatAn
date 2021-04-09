@@ -18,15 +18,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageButton
+        <Button
             android:id="@+id/imgbtn"
-            android:layout_width="170dp"
-            android:layout_height="150dp"
-            android:layout_marginStart="20dp"
-            android:background="@color/no"
-            android:scaleType="fitStart"
-            app:srcCompat="@drawable/open_book"
-            android:contentDescription="Выход из библиотеки" />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="djkhfbgvdh"/>
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/imgbtn"-->
+<!--            android:layout_width="170dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:background="@color/no"-->
+<!--            android:scaleType="fitStart"-->
+<!--            app:srcCompat="@drawable/open_book"/>-->
     </LinearLayout>
 
     <ScrollView

@@ -4,39 +4,39 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
-import android.transition.Scene;
 import android.view.View;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.TextView;
-import android.widget.Toast;
 
 public class Library extends AppCompatActivity {
 
 
     Button btn_book1, btn_book4, btn_book3, btn_book2;
 
-    @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Button btn = findViewById(R.id.imgbtn);
+//        //кнопка iz библиотекi
+//        btn.OnClick(v -> {
+//            Intent intent = new Intent(Library.this, GamesLevels.class);
+//            startActivity(intent);
+//            finish();
+//        });
 
-        ImageButton libr = findViewById(R.id.imgbtn);
-        //кнопка перехода из бибилиотеки в уровни
-        libr.setOnClickListener(new View.OnClickListener() {
-            @Override
+//        ImageButton libr = findViewById(R.id.imgbtn);
+//        //кнопка перехода из бибилиотеки в уровни
+        Button btn = (Button) findViewById(R.id.imgbtn);
+        btn.setOnClickListener(new View.OnClickListener() {
+           @Override
             public void onClick(View v) {
                 Intent I = new Intent(Library.this, GamesLevels.class);
                 startActivity(I);
                 finish();
-            }
+           }
         });
 
         btn_book1 = (Button)findViewById(R.id.book_1);
