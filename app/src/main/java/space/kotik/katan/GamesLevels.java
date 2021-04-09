@@ -6,9 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class GamesLevels extends AppCompatActivity {
 
+    private long backPressedTime;
+    private Toast backToast;
 
 
     @Override
@@ -127,13 +130,16 @@ public class GamesLevels extends AppCompatActivity {
 
     //системная кнопка назад
     @Override
-    public void onBackPressed(){
-        try {
-            Intent intent = new Intent(GamesLevels.this, SplashScreen.class);
-            startActivity(intent);
-            finish();
-        } catch (Exception e) {
-            e.printStackTrace();
+    public void onBackPressed() {
+        if (backPressedTime + 2000 > System.currentTimeMillis()){
+            backToast.cancel();
+            super.onBackPressed();
+            return;
+        }else {
+            backToast = Toast.makeText(getBaseContext(), "Нажмите ещё раз для того, чтобы выйти.", Toast.LENGTH_SHORT);
+            backToast.show();
         }
+        backPressedTime = System.currentTimeMillis();
+
     }
 }

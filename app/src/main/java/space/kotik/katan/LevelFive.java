@@ -25,7 +25,7 @@ public class LevelFive extends AppCompatActivity {
 
         //загружаем текст уровня
         text = (TextView) findViewById(R.id.one);
-                text.setText(getResources().getString(R.string.level_three));
+                text.setText(getResources().getString(R.string.level_five));
 
         lesson = (TextView) findViewById(R.id.lesson);
         lesson.setText(getResources().getString(R.string.lessonfive));

@@ -6,14 +6,18 @@ import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 import android.widget.Toast;
+
+import com.airbnb.lottie.LottieAnimationView;
 
 public class SplashScreen extends AppCompatActivity {
 
 
     private final int SPLASH_DISPLAY_LENGHT = 3000;
-    private long backPressedTime;
-    private Toast backToast;
+//    private long backPressedTime;
+//    private Toast backToast;
+    LottieAnimationView load;
 
     @SuppressLint("SetJavaScriptEnabled")
     @Override
@@ -29,9 +33,19 @@ public class SplashScreen extends AppCompatActivity {
                 SplashScreen.this.finish();
             }
         }, SPLASH_DISPLAY_LENGHT);
+
+        load = findViewById(R.id.loading);
+
+        load.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                load.playAnimation();
+
+            }
+        });
     }
 
-    @Override
+    /*@Override
     public void onBackPressed() {
         if (backPressedTime + 2000 > System.currentTimeMillis()){
             backToast.cancel();
@@ -43,5 +57,5 @@ public class SplashScreen extends AppCompatActivity {
         }
         backPressedTime = System.currentTimeMillis();
 
-    }
+    }*/
 }

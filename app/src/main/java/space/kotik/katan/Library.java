@@ -77,4 +77,12 @@ public class Library extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent i = new Intent(Library.this, GamesLevels.class);
+        startActivity(i);
+        finish();
+    }
 }
