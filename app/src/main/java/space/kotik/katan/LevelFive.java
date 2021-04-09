@@ -54,8 +54,7 @@ public class LevelFive extends AppCompatActivity {
 
 
         ViewPager viewPager = findViewById(R.id.viewPager);
-        int[]  mImageIds = new int[]{R.drawable.three1, R.drawable.three2, R.drawable.three3, R.drawable.three4, R.drawable.three5,
-                R.drawable.three6, R.drawable.three7, R.drawable.three8, R.drawable.three9};
+        int[]  mImageIds = new int[]{R.drawable.five1, R.drawable.five2, R.drawable.five3};
         ImageAdapter adapter = new ImageAdapter(this,  mImageIds);
         viewPager.setAdapter(adapter);
     }

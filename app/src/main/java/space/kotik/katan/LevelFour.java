@@ -54,8 +54,8 @@ public class LevelFour extends AppCompatActivity {
 
 
         ViewPager viewPager = findViewById(R.id.viewPager);
-        int[]  mImageIds = new int[]{R.drawable.three1, R.drawable.three2, R.drawable.three3, R.drawable.three4, R.drawable.three5,
-                R.drawable.three6, R.drawable.three7, R.drawable.three8, R.drawable.three9};
+        int[]  mImageIds = new int[]{R.drawable.four1, R.drawable.four2, R.drawable.four3, R.drawable.four4, R.drawable.four5,
+                R.drawable.four6, R.drawable.four7, R.drawable.four8, R.drawable.four9,R.drawable.four10};
         ImageAdapter adapter = new ImageAdapter(this,  mImageIds);
         viewPager.setAdapter(adapter);
     }

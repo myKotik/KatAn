@@ -19,17 +19,17 @@ public class GamesLevels extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.gameslevels);
 
-        ImageButton back = findViewById(R.id.btn_back);
-        //кнопка назад
-        back.setOnClickListener(v -> {
-            try {
-                Intent intent = new Intent(GamesLevels.this, SplashScreen.class);
-                startActivity(intent);
-                finish();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        });
+//        ImageButton back = findViewById(R.id.btn_back);
+//        //кнопка назад
+//        back.setOnClickListener(v -> {
+//            try {
+//                Intent intent = new Intent(GamesLevels.this, SplashScreen.class);
+//                startActivity(intent);
+//                finish();
+//            } catch (Exception e) {
+//                e.printStackTrace();
+//            }
+//        });
 
         ImageButton lib = findViewById(R.id.library);
         //кнопка в библиотеку
