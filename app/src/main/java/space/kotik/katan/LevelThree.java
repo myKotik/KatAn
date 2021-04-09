@@ -1,12 +1,9 @@
 package space.kotik.katan;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -22,36 +19,32 @@ public class LevelThree extends AppCompatActivity {
         setContentView(R.layout.universal_level);
 
 
-
         //загружаем текст уровня
-        text = (TextView) findViewById(R.id.one);
+        text = findViewById(R.id.one);
                 text.setText(getResources().getString(R.string.level_three));
 
-        lesson = (TextView) findViewById(R.id.lesson);
+        lesson = findViewById(R.id.lesson);
         lesson.setText(getResources().getString(R.string.lessonthree));
 
 
         ImageButton back = findViewById(R.id.btn_back);
         //кнопка назад
         back.setOnClickListener(v -> {
-           onBackPressed();
+            Intent intent = new Intent(LevelThree.this, GamesLevels.class);
+            startActivity(intent);finish();
         });
 
         ImageButton go = findViewById(R.id.forward);
         // кнопка перехода из уровень в следующий
-        go.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    Intent intent = new Intent(LevelThree.this, LevelFour.class);
-                    startActivity(intent);
-                    finish();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+        go.setOnClickListener(v -> {
+            try {
+                Intent intent = new Intent(LevelThree.this, LevelFour.class);
+                startActivity(intent);
+                finish();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         });
-
 
         ViewPager viewPager = findViewById(R.id.viewPager);
         int[]  mImageIds = new int[]{R.drawable.three1, R.drawable.three2, R.drawable.three3, R.drawable.three4, R.drawable.three5,
@@ -60,20 +53,9 @@ public class LevelThree extends AppCompatActivity {
         viewPager.setAdapter(adapter);
     }
 
-    public void OpenActivity(Activity activity) {
-        try {
-            Intent intent = new Intent(this, activity.getClass());
-            startActivity(intent);
-            this.finish();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
-
     //системная кнопка назад
     @Override
     public void onBackPressed(){
-super.onBackPressed();
+        super.onBackPressed();
     }
 }

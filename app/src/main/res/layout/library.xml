@@ -26,7 +26,8 @@
             android:layout_marginStart="20dp"
             android:background="@color/no"
             android:scaleType="fitStart"
-            app:srcCompat="@drawable/btn_back"/>
+            app:srcCompat="@drawable/btn_back"
+              tools:ignore="ContentDescription" />
     </LinearLayout>
 
     <ScrollView
@@ -42,7 +43,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
-
             <Button
                 android:id="@+id/book_1"
                 android:layout_width="match_parent"
@@ -54,7 +54,6 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="25dp"/>
-
             <Button
                 android:id="@+id/book_2"
                 android:layout_width="match_parent"
@@ -66,7 +65,6 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="25dp"/>
-
             <Button
                 android:id="@+id/book_3"
                 android:layout_width="match_parent"
@@ -78,7 +76,6 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="25dp"
                 android:layout_marginEnd="25dp"/>
-
             <Button
                 android:id="@+id/book_4"
                 android:layout_width="match_parent"

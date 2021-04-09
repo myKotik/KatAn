@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
@@ -20,20 +19,18 @@ public class LevelSix extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.universal_level);
 
-
-
         //загружаем текст уровня
-        text = (TextView) findViewById(R.id.one);
+        text = findViewById(R.id.one);
                 text.setText(getResources().getString(R.string.level_six));
 
-        lesson = (TextView) findViewById(R.id.lesson);
+        lesson = findViewById(R.id.lesson);
         lesson.setText(getResources().getString(R.string.lessonsix));
-
 
         ImageButton back = findViewById(R.id.btn_back);
         //кнопка назад
         back.setOnClickListener(v -> {
-           onBackPressed();
+            Intent intent = new Intent(LevelSix.this, GamesLevels.class);
+            startActivity(intent);finish();
         });
 
         ImageButton go = findViewById(R.id.forward);
@@ -42,10 +39,9 @@ public class LevelSix extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                     Intent intent = new Intent(LevelSix.this, GamesLevels.class);
-                onBackPressed();
+                startActivity(intent);finish();
             }
         });
-
 
         ViewPager viewPager = findViewById(R.id.viewPager);
         int[]  mImageIds = new int[]{R.drawable.one1, R.drawable.one2, R.drawable.one3, R.drawable.one4, R.drawable.one5,
@@ -55,17 +51,6 @@ public class LevelSix extends AppCompatActivity {
         ImageAdapter adapter = new ImageAdapter(this,  mImageIds);
         viewPager.setAdapter(adapter);
     }
-
-   /* public void OpenActivity(Activity activity) {
-        try {
-            Intent intent = new Intent(this, activity.getClass());
-            startActivity(intent);
-            this.finish();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }*/
-
 
     //системная кнопка назад
     @Override

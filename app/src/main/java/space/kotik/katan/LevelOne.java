@@ -2,18 +2,10 @@ package space.kotik.katan;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
-
-import android.annotation.SuppressLint;
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
-
-import java.util.ArrayList;
 
 
 public class LevelOne extends AppCompatActivity {
@@ -26,37 +18,31 @@ public class LevelOne extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.universal_level);
 
-
-
         //загружаем текст уровня
-        text = (TextView) findViewById(R.id.one);
+        text = findViewById(R.id.one);
                 text.setText(getResources().getString(R.string.level_one));
 
-        lesson = (TextView) findViewById(R.id.lesson);
+        lesson = findViewById(R.id.lesson);
         lesson.setText(getResources().getString(R.string.lessonone));
-
 
         ImageButton back = findViewById(R.id.btn_back);
         //кнопка назад
         back.setOnClickListener(v -> {
-           onBackPressed();
+            Intent intent = new Intent(LevelOne.this, GamesLevels.class);
+            startActivity(intent);finish();
         });
 
         ImageButton go = findViewById(R.id.forward);
         // кнопка перехода из уровень в следующий
-        go.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    Intent intent = new Intent(LevelOne.this, LevelTwo.class);
-                    startActivity(intent);
-                    finish();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+        go.setOnClickListener(v -> {
+            try {
+                Intent intent = new Intent(LevelOne.this, LevelTwo.class);
+                startActivity(intent);
+                finish();
+            } catch (Exception e) {
+                e.printStackTrace();
             }
         });
-
 
         ViewPager viewPager = findViewById(R.id.viewPager);
         int[]  mImageIds = new int[]{R.drawable.one1, R.drawable.one2, R.drawable.one3, R.drawable.one4, R.drawable.one5,
@@ -68,15 +54,10 @@ public class LevelOne extends AppCompatActivity {
     }
 
    /* public void OpenActivity(Activity activity) {
-        try {
             Intent intent = new Intent(this, activity.getClass());
             startActivity(intent);
             this.finish();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }*/
-
 
     //системная кнопка назад
     @Override

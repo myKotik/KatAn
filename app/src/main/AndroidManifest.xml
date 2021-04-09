@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:largeHeap="true"
         android:theme="@style/Theme.KatAn"
-        >
+        tools:ignore="AllowBackup">
         <activity
             android:name=".SplashScreen"
             android:screenOrientation="portrait">

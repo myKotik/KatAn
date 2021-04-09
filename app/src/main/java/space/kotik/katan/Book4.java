@@ -1,9 +1,7 @@
 package space.kotik.katan;
 
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.github.barteksc.pdfviewer.PDFView;
 
 public class Book4 extends AppCompatActivity {
@@ -14,7 +12,7 @@ public class Book4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_book4);
 
-        book4 = (PDFView)findViewById(R.id.pdfbook4);
+        book4 = findViewById(R.id.pdfbook4);
 
         book4.fromAsset("book_four.pdf").load();
     }

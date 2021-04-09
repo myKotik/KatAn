@@ -42,6 +42,5 @@
             app:lottie_loop="true"
             app:lottie_autoPlay="true"
             app:lottie_fileName="loading.json"/>
-
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
