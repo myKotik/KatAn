@@ -13,17 +13,6 @@
         android:gravity="clip_horizontal"
         android:orientation="horizontal">
 
-        <ImageButton
-            android:id="@+id/btn_back"
-            android:layout_width="130dp"
-            android:layout_height="90dp"
-            android:layout_marginStart="@dimen/defaul_margin_16"
-            android:layout_marginTop="@dimen/defaul_margin_16"
-            android:layout_weight="1"
-            android:background="#00FFFFFF"
-            android:contentDescription="@string/back"
-            android:scaleType="fitStart"
-            app:srcCompat="@drawable/btn_back" />
 
         <ImageButton
             android:id="@+id/library"

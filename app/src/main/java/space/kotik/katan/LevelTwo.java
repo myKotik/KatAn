@@ -23,8 +23,6 @@ public class LevelTwo extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.universal_level);
 
-
-
         //загружаем текст уровня
         text = (TextView) findViewById(R.id.one);
                 text.setText(getResources().getString(R.string.level_two));
@@ -36,13 +34,8 @@ public class LevelTwo extends AppCompatActivity {
         ImageButton back = findViewById(R.id.btn_back);
 
         back.setOnClickListener(v -> {
-            try {
                 Intent intent = new Intent(LevelTwo.this, GamesLevels.class);
-                startActivity(intent);
-                finish();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+                onBackPressed();
         });
 
         ImageButton go = findViewById(R.id.forward);
@@ -80,12 +73,8 @@ public class LevelTwo extends AppCompatActivity {
     //системная кнопка назад
     @Override
     public void onBackPressed(){
-        try {
             Intent intent = new Intent(LevelTwo.this, GamesLevels.class);
             startActivity(intent);
             finish();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 }

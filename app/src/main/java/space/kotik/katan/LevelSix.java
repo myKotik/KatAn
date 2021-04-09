@@ -41,13 +41,8 @@ public class LevelSix extends AppCompatActivity {
         go.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try {
                     Intent intent = new Intent(LevelSix.this, GamesLevels.class);
-                    startActivity(intent);
-                    finish();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+                onBackPressed();
             }
         });
 
