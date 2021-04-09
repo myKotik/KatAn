@@ -17,20 +17,12 @@ public class Library extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.library);
 
-        //Button btn = findViewById(R.id.imgbtn);
-//        //кнопка iz библиотекi
-//        btn.OnClick(v -> {
-//            Intent intent = new Intent(Library.this, GamesLevels.class);
-//            startActivity(intent);
-//            finish();
-//        });
 
-//        ImageButton libr = findViewById(R.id.imgbtn);
+       ImageButton libr = findViewById(R.id.imgbtn);
 //        //кнопка перехода из бибилиотеки в уровни
-        Button btn = (Button) findViewById(R.id.imgbtn);
-        btn.setOnClickListener(new View.OnClickListener() {
+        libr.setOnClickListener(new View.OnClickListener() {
            @Override
             public void onClick(View v) {
                 Intent I = new Intent(Library.this, GamesLevels.class);
